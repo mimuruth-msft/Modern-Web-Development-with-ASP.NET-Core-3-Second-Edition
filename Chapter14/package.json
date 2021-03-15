@@ -1,0 +1,16 @@
+{
+  "name": "chapter14",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "start": "node ClientApp/index.js",
+    "stop": "node node_modules/pkill/index.js --signal SIGINT chapter14"
+  },
+  "author": "Ricardo Peres",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.17.1",
+    "pkill": "2.0.0"
+  }
+}

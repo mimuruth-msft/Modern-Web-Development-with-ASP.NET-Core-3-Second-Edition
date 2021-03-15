@@ -1,0 +1,18 @@
+﻿@page
+@model chapter11.Pages.HelloWorldModel
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello World</title>
+</head>
+<body>
+    <form method="post">
+        <h1>@Html.Raw("Hello, World!")</h1>
+        <p>Message: @Model.Message</p>
+
+        <input type="submit" value="One Handler" asp-page-handler="One" />
+        <input type="submit" value="Another Handler" asp-page-handler="Two" />
+        <input type="submit" value="Yet Another Handler" asp-page-handler="Three" asp-route-foo="bar" />
+    </form>
+</body>
+</html>
